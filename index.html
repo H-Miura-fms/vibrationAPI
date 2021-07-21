@@ -1,0 +1,20 @@
+<title>The Vibration API</title>
+<link rel = "stylesheet" href = "css/style.css">
+
+
+
+<body>
+    <h1>THe Vibration API</h1>
+    <button onclick="vibrate(1000)">single</button><br>
+    <button onclick="vibratePattern()">pattern</button>
+
+    <script>
+        function vibrate (ms){
+            window.navigator.vibrate(ms);
+        }
+
+        function vibratePattern(){
+            window.navigator.vibrate([300,100,300,100,300])
+        }
+    </script>
+</body>
